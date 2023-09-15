@@ -1,0 +1,5 @@
+package com.ssafy.jdbctest;
+
+public class DriverLoadingTest {
+
+}

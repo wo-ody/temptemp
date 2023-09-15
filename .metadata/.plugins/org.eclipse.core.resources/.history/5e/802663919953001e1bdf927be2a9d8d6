@@ -1,0 +1,49 @@
+package user;
+
+import java.sql.*;
+
+// DBManager class
+public class read {
+
+    public static void main(String[] args){
+        
+        // SQL
+    	String selectSql = "select * from customer where customer_id > ?;";
+     
+        
+        // 자료구조 및 객체
+        Connection con = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        int ret = -1;
+        
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+        }catch(ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        
+        try {
+        	con = DriverManager.getConnection(url, user, pwd);
+        	System.out.println(ret);
+			
+			// select
+			pstmt = con.prepareStatement(selectSql);
+			pstmt.setInt(1, 1);
+			rs = pstmt.executeQuery();
+			
+			while( rs.next() ) {
+				// 테이블 컬럼의 타입에 맞게 ResultSet 객체의 getXXX() 호출하고 결과를 받는다.
+				int customer_id = rs.getInt("customer_id");
+				String customer_nm = rs.getString("customer_nm");
+				System.out.println(customer_id + " / " + customer_nm);
+			}
+            
+            
+        }catch(SQLException e) {
+            e.printStackTrace();
+        }finally {
+            DBManager.releaseConnection(rs, pstmt, con);
+        }
+    }
+}

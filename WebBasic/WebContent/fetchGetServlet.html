@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>받은 데이터</h3>
+      <div id="receviedData"></div>
+    </div>
+    <hr />
+    <button id="btnGet">가져오기</button>
+    <script>
+      // ajax (비동기 통신) - callback
+      let httpRequest = new XMLHttpRequest(); // XHR
+      httpRequest.onreadystatechange = ajaxCallback;
+
+      window.onload = function () {
+        document.querySelector("#btnGet").onclick = getJson;
+      };
+
+      // function getJson() {
+      //   const url = "./jsonList.html";
+      //   // fetch
+      //   fetch(url)
+      //     .then((response) => response.json()) // json() 비동기
+      //     .then((userList) => {
+      //       let userHtml = ``;
+      //       userList.forEach((user) => {
+      //         userHtml += `<div><span>${user.userSeq}</span><span>${user.userName}</span><span>${user.userEmail}</span></div>`;
+      //       });
+      //       document.querySelector("#receviedData").innerHTML = userHtml;
+      //     });
+      // }
+
+      // async await
+      async function getJson() {
+        const url = "/cutie/ILOVEHY";
+        let response = await fetch(url);
+        let userList = await response.json();
+
+        let userHtml = ``;
+        userList.forEach((user) => {
+          userHtml += `<div><span>${user.userSeq}</span><span>${user.userName}</span><span>${user.userEmail}</span></div>`;
+        });
+        document.querySelector("#receviedData").innerHTML = userHtml;
+      }
+
+      function ajaxCallback() {
+        // readyState 전체가 아닌 DONE 상태만 확인
+        if (httpRequest.readyState == XMLHttpRequest.DONE) {
+          if (httpRequest.status == 200) {
+            // console.log(httpRequest.responseText);
+            let userList = JSON.parse(httpRequest.responseText); // json 문자열 => 배열 객체로 변환
+          } else {
+            alert("문제 발생!");
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

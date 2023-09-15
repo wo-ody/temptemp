@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;MaintainDataServlet.java&apos; to &apos;WebBasic/src/basic&apos;&#x0D;&#x0A;- Original project: &apos;WebBasic&apos;&#x0D;&#x0A;- Destination element: &apos;WebBasic/src/basic&apos;&#x0D;&#x0A;- Original element: &apos;basic.MaintainDataServlet.java&apos;" description="Copy compilation unit" destination="/src&lt;basic" element1="/src&lt;basic{MaintainDataServlet.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1694676951021" units="1" version="1.0"/>
+</session>

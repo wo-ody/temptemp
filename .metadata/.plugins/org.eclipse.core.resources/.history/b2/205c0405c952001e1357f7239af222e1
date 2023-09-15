@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>today's seohyun statement --> (◕ω◕✿)</h1>
+	<a href="/WebBasic/reqres?username=홍길동">파라미터 get / uesrname = 홍길동</a>
+</body>
+</html>
