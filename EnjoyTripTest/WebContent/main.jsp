@@ -31,8 +31,8 @@
 <%
   	}else{
 %>  	
- <h1> 로그인 하세요 !</h1>
- <a href ="/login/login.jsp"> 로그인 페이지</a>
+ 	<h1> 로그인 하세요 !</h1>
+ 	<a href ="/login/login.jsp"> 로그인 페이지</a>
 <%	
   	}
 %>

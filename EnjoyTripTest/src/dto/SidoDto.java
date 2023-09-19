@@ -25,6 +25,11 @@ public class SidoDto {
 		this.sidoName = sidoName;
 	}
 	
+	@Override
+	public String toString() {
+		return "SidoDto [sidoCode=" + sidoCode + ", sidoName=" + sidoName + "]";
+	}
+	
 	
 	
 }

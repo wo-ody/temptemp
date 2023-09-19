@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="dto.UserDto"/>
 <fullyQualifiedTypeName name="com.google.gson.Gson"/>
 <fullyQualifiedTypeName name="com.ssafy.jdbctest.DriverLoadingTest"/>
 <fullyQualifiedTypeName name="java.sql.Statement"/>
 <fullyQualifiedTypeName name="java.lang.ClassNotFoundException"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
-<fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="java.sql.DriverManager"/>
-<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 <fullyQualifiedTypeName name="jdbc.DBManager"/>
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="javax.naming.Context"/>
@@ -19,5 +15,35 @@
 <fullyQualifiedTypeName name="javax.servlet.ServletException"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
 <fullyQualifiedTypeName name="java.sql.Timestamp"/>
+<fullyQualifiedTypeName name="dto.StudentDto"/>
+<fullyQualifiedTypeName name="java.util.StringTokenizer"/>
+<fullyQualifiedTypeName name="java.util.ArrayDeque"/>
+<fullyQualifiedTypeName name="java.util.Queue"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="main.service.MainService"/>
+<fullyQualifiedTypeName name="main.dao.MainDaoImpl"/>
+<fullyQualifiedTypeName name="main.dao.MainDao"/>
+<fullyQualifiedTypeName name="main.service.MainServiceImpl"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="common.DBManager"/>
+<fullyQualifiedTypeName name="dto.SidoDto"/>
+<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+<fullyQualifiedTypeName name="dto.UserDto"/>
+<fullyQualifiedTypeName name="loginout.dao.LoginoutDao"/>
+<fullyQualifiedTypeName name="loginout.dao.LoginoutDaoImpl"/>
+<fullyQualifiedTypeName name="loginout.service.LoginoutService"/>
+<fullyQualifiedTypeName name="loginout.service.LoginoutServiceImpl"/>
 <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+<fullyQualifiedTypeName name="register.dao.RegisterDao"/>
+<fullyQualifiedTypeName name="register.dao.RegisterDaoImpl"/>
+<fullyQualifiedTypeName name="register.service.RegisterService"/>
+<fullyQualifiedTypeName name="register.service.RegisterServiceImpl"/>
+<fullyQualifiedTypeName name="dto.RegisterDto"/>
+<fullyQualifiedTypeName name="com.google.gson.JsonObject"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
 </qualifiedTypeNameHistroy>

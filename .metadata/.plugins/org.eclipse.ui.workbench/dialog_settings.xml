@@ -33,10 +33,13 @@
 			<item value="org.eclipse.ui.Basic"/>
 		</list>
 	</section>
+	<section name="ZipFileImportWizard">
+	</section>
 	<section name="FileSystemImportWizard">
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\SSAFY\Desktop\shmon\서현과제\enjoytrip_2_front_13_khy-psh"/>
 			<item value="C:\Users\SSAFY\Downloads\enjoytrip_dao_배포"/>
 			<item value="C:\Users\SSAFY\Downloads\0913_배포\jdbctest_배포"/>
 		</list>
