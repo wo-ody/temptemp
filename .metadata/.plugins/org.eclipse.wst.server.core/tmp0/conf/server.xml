@@ -160,7 +160,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\Users\SSAFY\Desktop\shmon\Online\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\basic_servlet" path="/basic" reloadable="true" source="org.eclipse.jst.jee.server:basic_servlet"/><Context docBase="C:\Users\SSAFY\Desktop\shmon\Online\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\WebBasic" path="/WebBasic" reloadable="true" source="org.eclipse.jst.jee.server:WebBasic"/><Context docBase="C:\Users\SSAFY\Desktop\shmon\Online\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\hw" path="/hw" reloadable="true" source="org.eclipse.jst.jee.server:hw"/><Context docBase="C:\Users\SSAFY\Desktop\shmon\Online\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ShyTrip" path="" reloadable="true" source="org.eclipse.jst.jee.server:ShyTrip"/></Host>
+      <Context docBase="C:\Users\SSAFY\Desktop\shmon\Online\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\WebBasic" path="/WebBasic" reloadable="true" source="org.eclipse.jst.jee.server:WebBasic"/><Context docBase="C:\Users\SSAFY\Desktop\shmon\Online\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ShyTrip" path="" reloadable="true" source="org.eclipse.jst.jee.server:ShyTrip"/><Context docBase="C:\Users\SSAFY\Desktop\shmon\Online\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\BoardWebAjaxJson" path="/BoardWebAjaxJson" reloadable="true" source="org.eclipse.jst.jee.server:BoardWebAjaxJson"/></Host>
     </Engine>
   </Service>
 </Server>

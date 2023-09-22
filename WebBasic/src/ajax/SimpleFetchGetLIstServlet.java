@@ -21,25 +21,25 @@ public class SimpleFetchGetLIstServlet extends HttpServlet {
     
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		System.out.println("¿ÜÃÄ ÇÏ¿µ ");
+		System.out.println("ajax í…ŒìŠ¤íŠ¸ ");
 	
-		// data ÁØºñ
+		// data ï¿½Øºï¿½
 		ArrayList<UserDto> userList = new ArrayList<>();
-		userList.add(new UserDto(1111,"È«±æµ¿","hong@gildong.com"));
-		userList.add(new UserDto(2222,"ÀÌ±æµ¿","lee@gildong.com"));
-		userList.add(new UserDto(3333,"»ï±æµ¿","sam@gildong.com"));
+		userList.add(new UserDto(1111,"í™ê¸¸ë™","hong@gildong.com"));
+		userList.add(new UserDto(2222,"ì´ê¸¸ë™","lee@gildong.com"));
+		userList.add(new UserDto(3333,"ì‚¼ê¸¸ë™","sam@gildong.com"));
 		
-		// userList ¸¦ http·Î client¿¡ º¸³»¾ß ÇÔ.
-		// java object => json À¸·Î º¯°æÇØ¼­ ³»·ÁÁÖ¾î¾ß ÇÑ´Ù.
+		// userList ï¿½ï¿½ httpï¿½ï¿½ clientï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½.
+		// java object => json ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø¼ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½ï¿½ ï¿½Ñ´ï¿½.
 		Gson gson = new Gson();
 		String jsonStr = gson.toJson(userList);
 		System.out.println(jsonStr);
 		
-		// cors ÀÌ½´ ÇØ°á
+		// cors ï¿½Ì½ï¿½ ï¿½Ø°ï¿½
 		response.addHeader("Access-Control-Allow-Origin", "*");
 		
-		// ³»·ÁÁØ´Ù. (response)
-		response.setContentType("application/json; charset=utf-8"); // json À» ³»·ÁÁØ´Ù. utf-8 Ã³¸®
+		// ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½. (response)
+		response.setContentType("application/json; charset=utf-8"); // json ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½. utf-8 Ã³ï¿½ï¿½
 		response.getWriter().write(jsonStr);
 		
 		

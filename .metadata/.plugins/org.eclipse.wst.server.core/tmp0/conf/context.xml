@@ -31,5 +31,7 @@
     	url="jdbc:mysql://localhost:3306/enjoytrip" username="root" password="1234"
     	initialSize="5" maxTotal="10" maxIdle="100"     />
     
-    
+    <Resource name="jdbc/board" auth="Container" type="javax.sql.DataSource" driverClassName="com.mysql.cj.jdbc.Driver"
+    	url="jdbc:mysql://localhost:3306/board" username="root" password="1234"
+    	initialSize="5" maxTotal="10" maxIdle="100"     />
 </Context>

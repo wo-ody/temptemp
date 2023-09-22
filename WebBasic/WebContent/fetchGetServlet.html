@@ -42,15 +42,17 @@
 
       // async await
       async function getJson() {
-        const url = "/cutie/ILOVEHY";
-        let response = await fetch(url);
-        let userList = await response.json();
-
-        let userHtml = ``;
-        userList.forEach((user) => {
-          userHtml += `<div><span>${user.userSeq}</span><span>${user.userName}</span><span>${user.userEmail}</span></div>`;
-        });
-        document.querySelector("#receviedData").innerHTML = userHtml;
+    	  
+    	  console.log("getJson() 들어옴");
+		 const url = "/WebBasic/ILOVEHY";
+		 let response = await fetch(url);
+		 let userList = await response.json();
+		
+		 let userHtml = ``;
+		 userList.forEach((user) => {
+		   userHtml += `<div><span>${user.userSeq}</span><span>${user.userName}</span><span>${user.userEmail}</span></div>`;
+		 });
+		 document.querySelector("#receviedData").innerHTML = userHtml;
       }
 
       function ajaxCallback() {
